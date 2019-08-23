@@ -14,7 +14,8 @@ export default function EpisodeList() {
       axios
         .get('https://rickandmortyapi.com/api/episode/')
         .then(response => {
-          const episode = (response.data.results) //This works
+          const episode = (response.data.results)
+          console.log(episode) //This works
           setEpisode(episode);
         })
         .catch(error => {
@@ -30,6 +31,8 @@ export default function EpisodeList() {
          key={epi.id}
          name={epi.name}
          type={epi.type}
+         aired={epi.air_date}
+         episode={epi.episode}
          dimension={epi.dimension}
          residents={epi.residents} //this is an array of URLs
           />

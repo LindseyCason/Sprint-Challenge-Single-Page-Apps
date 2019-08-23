@@ -1,5 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
 
 const Div = styled.div`
 color: #fcba03;
@@ -54,7 +56,10 @@ export default function CharacterCard(props) {
     <H2>{props.species}, {props.status}</H2>
     <P>Location: {props.location}</P>
     <P>Origin: {props.origin}</P>
-    <P>Episodes: {props.episodes}</P> YOU NEED TO MAKE THIS A LINK TO THE EPISODES PAGE
+
+
+    <Link to ={`src/components/EpisodeList.js`}>
+    <P>Episodes: {props.episodes}</P> YOU NEED TO MAKE THIS A LINK TO THE EPISODES PAGE</Link>
     </Div>
   );
 }
