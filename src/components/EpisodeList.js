@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+// import { BrowserRouter as Router, Route, Link, NavLink} from "react-router-dom";
+
 import EpisodeCard from "./EpisodeCard";
 
 import axios from "axios";
@@ -15,7 +17,7 @@ export default function EpisodeList() {
         .get('https://rickandmortyapi.com/api/episode/')
         .then(response => {
           const episode = (response.data.results)
-          console.log(episode) //This works
+          // console.log(episode) //This works
           setEpisode(episode);
         })
         .catch(error => {
@@ -25,9 +27,15 @@ export default function EpisodeList() {
   }, []); //Dependecy array in place
 
   return (
+
+
+
+
     <section className="episode-list grid-view">
+    
         {episode.map(epi => (
-        <EpisodeCard
+
+          <EpisodeCard
          key={epi.id}
          name={epi.name}
          type={epi.type}

@@ -43,7 +43,7 @@ export default function CharacterList() {
          gender={chars.gender}
          origin={chars.origin.name} //This one has an additional URL but not necessary
          image={chars.image} //this one is a URL
-         episodes={chars.episedes} //this is a URL
+         episodes={chars.episodes} //this is a URL
           />
       ))}
     </section>

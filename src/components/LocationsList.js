@@ -24,6 +24,7 @@ export default function LocationsList() {
   }, []); //Dependecy array in place
 
   return (
+    
     <section className="location-list grid-view">
         {loc.map(locs => (
             // console.log(locs),

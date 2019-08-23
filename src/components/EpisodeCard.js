@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 const Div = styled.div`
 color: #fcba03;
@@ -30,8 +30,6 @@ opacity 1.;
 
 `;
 
-const P = styled.p`
-color: #00000080;`
 
 // import EpisodeList from "./EpisodeList"
 

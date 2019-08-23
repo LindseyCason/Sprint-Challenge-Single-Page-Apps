@@ -1,30 +1,43 @@
 
-import React from 'react'
-import { Tab } from 'semantic-ui-react'
-import { BrowserRouter as Router, Route, Link, NavLink} from "react-router-dom";
-import CharacterList from "./CharacterList";
-import LocationsList from "./LocationsList.js";
-import EpisodeList from "./EpisodeList.js"
-import WelcomePage from "./WelcomePage.js"
+// import React from 'react'
+// import { Tab } from 'semantic-ui-react'
+// import { Link, NavLink} from "react-router-dom";
+// // import CharacterList from "./CharacterList";
+// import LocationsList from "./LocationsList.js";
+// import EpisodeList from "./EpisodeList.js"
+// import WelcomePage from "./WelcomePage.js"
 
 
-const panes = [
-  { menuItem: 'Home', render: () => <Tab.Pane>
-        <Link to="/"><WelcomePage /></Link>
-                    </Tab.Pane> },
+// const panes = [
+//   { menuItem: 'Home', render: () => 
+//   <NavLink to="/" exact><Tab.Pane>
+//                     <WelcomePage />
+//                   </Tab.Pane>
+//   </NavLink> },
 
-  { menuItem: 'Characters', render: () => 
-           <Tab.Pane><NavLink to ="/characters"><CharacterList /></NavLink></Tab.Pane>
-                     },
+//   { menuItem: "What is happening", render: () => 
+//       <Link to ="/characters"><Tab.Pane>
+//       {/* <CharacterList /> */}
+//       </Tab.Pane></Link>
+  
+//                      },
 
-  { menuItem: 'Locations', render: () => <Tab.Pane>
-             <NavLink to="/locations"><LocationsList /></NavLink>
-  </Tab.Pane> },
-  { menuItem: 'Episodes', render: () => <Tab.Pane>
-            <NavLink to="/episodes"><EpisodeList /></NavLink>
-</Tab.Pane> },
-]
+//   { menuItem: 'Locations', render: () => 
+//   <NavLink to="/locations" exact>
+//       <Tab.Pane>
+//       <LocationsList />
+//       </Tab.Pane>
+//       </NavLink>
+//    },
+//   { menuItem: 'Episodes', render: () => 
+//             <NavLink to="/episodes" exact><Tab.Pane>
+//               <EpisodeList /></Tab.Pane></NavLink>
+//  },
+// ]
 
-const TabNav = () => <Tab panes={panes} />
+// const TabNav = () => <Tab panes={panes} />
 
-export default TabNav;
+// export default TabNav;
+
+
+
