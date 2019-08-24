@@ -1,5 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
+// import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 const Div = styled.div`
 color: #fcba03;
@@ -15,7 +16,7 @@ color: #fcba03;
 
 const H1 = styled.h1`
 color: #E39C54;
-font-family: "Arial";
+font-family: "impact";
 opacity: 1.;
 border-bottom: 2px solid white;
 font-size: 2rem;
@@ -24,23 +25,23 @@ font-size: 2rem;
 
 const H2 = styled.h2`
 color: #000000;
-font-family: "Arial";
+font-family: "impact";
 opacity 1.;
 
 `;
-///////////////////////////////
 
 
-export default function LocationCard(props) {
+// import EpisodeList from "./EpisodeList"
+
+//this page to design the layout
+export default function EpisodeCard(props) {
+
   return (
-  <Div>
+    <Div>
     <H1>{props.name}</H1>
-    <H2>Type:{props.type}</H2>
-    <H2>Dimension: {props.dimension}</H2>
-    <H2>Population:{props.residents}</H2>
+    <H2>Aired:{props.aired}</H2>
+    <H2>Episode:{props.episode}</H2>
     {/* <p>Characters: {props.characters}</p> YOU NEED TO MAKE THIS A LINK TO THE Characters PAGE */}
     </Div>
-  
-    );
+  );
 }
-
